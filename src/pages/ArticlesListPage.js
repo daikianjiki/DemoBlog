@@ -1,7 +1,13 @@
-const ArticleListPage = () => {
+import articles from "./article-content"
+import ArticlesList from './components/ArticlesList'
+
+const ArticlesListPage = () => {
     return (
-        <h1>This is the article list page!</h1>
+        <>
+        <h1>Articles</h1>
+        <ArticlesList articles={articles} />
+        </>
     )
 }
 
-export default ArticleListPage
+export default ArticlesListPage
